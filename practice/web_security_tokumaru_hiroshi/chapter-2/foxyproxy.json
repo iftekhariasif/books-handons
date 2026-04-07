@@ -1,0 +1,49 @@
+{
+  "mode": "patterns",
+  "browserVersion": "",
+  "loggingEnabled": false,
+  "proxySettings": [
+    {
+      "title": "OWASP ZAP",
+      "type": 1,
+      "color": "#66cc66",
+      "address": "127.0.0.1",
+      "port": 8081,
+      "proxyDNS": false,
+      "username": "",
+      "password": "",
+      "whitePatterns": [
+        {
+          "title": "example.jp",
+          "pattern": "*.example.jp/*",
+          "type": 1,
+          "protocols": 1,
+          "active": true
+        },
+        {
+          "title": "example.net",
+          "pattern": "*.example.net/*",
+          "type": 1,
+          "protocols": 1,
+          "active": true
+        },
+        {
+          "title": "example.com",
+          "pattern": "*.example.com/*",
+          "type": 1,
+          "protocols": 1,
+          "active": true
+        },
+        {
+          "title": "localhost-dvwa",
+          "pattern": "*localhost:8080*",
+          "type": 1,
+          "protocols": 1,
+          "active": true
+        }
+      ],
+      "blackPatterns": [],
+      "enabled": true
+    }
+  ]
+}
